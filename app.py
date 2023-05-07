@@ -27,11 +27,7 @@ def get_key_info(key):
 def clear_inputs(text):
     return ""
 
-with gr.Blocks() as demo:
-    gr.Markdown('''
-    # OpenAI API Key Info
-    ''')
-
+with gr.Blocks() as demo: 
     with gr.Row():
         with gr.Column():
             key =  gr.Textbox(lines=1, max_lines=1, label="OpenAI API Key")
