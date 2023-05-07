@@ -30,9 +30,6 @@ def clear_inputs(text):
 with gr.Blocks() as demo:
     gr.Markdown('''
     # OpenAI API Key Status Checker
-    
-    
-    
     ''')
 
     with gr.Row():
@@ -46,7 +43,4 @@ with gr.Blocks() as demo:
 
     clear_button.click(fn=clear_inputs, inputs=[key], outputs=[key])
     submit_button.click(fn=get_key_info, inputs=[key], outputs=[info], api_name="get_key_info")
-
-
-demo.queue(concurrency_count=1,  api_open=True)
 demo.launch()
