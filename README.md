@@ -3,7 +3,7 @@ title: Openai Api Key Status
 colorFrom: gray
 colorTo: green
 sdk: gradio
-sdk_version: 3.28.3
+sdk_version: 3.26.0
 app_file: app.py
 pinned: false
 license: mit
